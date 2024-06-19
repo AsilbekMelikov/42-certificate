@@ -34,6 +34,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Custom props */
+:root {
+  /* Colors */
+  --yellow-primary: #ffd600;
+  --dark-grey: #a8a8a8;
+  --light-grey: #d9d9d9;
+  --darker-grey: #5c5c5c;
+
+  /* Fonts */
+  --body-font-family: "Work Sans", "Arial", "sans-serif";
+}
+
 /* Global */
 html {
   box-sizing: border-box;
@@ -53,7 +66,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--body-font-family);
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -79,9 +92,9 @@ img {
 /* Container */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1040px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
 }
