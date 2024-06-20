@@ -1,4 +1,4 @@
-/* FONTS */
+/* Fonts */
 @font-face {
   font-family: "Work Sans";
   src: url("WorkSans-Regular.woff2") format("woff2"),
@@ -79,8 +79,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-
-  /* color: #fff; */
 }
 
 img {
@@ -115,6 +113,10 @@ img {
   text-decoration: none;
 }
 
+.log-img {
+  display: inline-block;
+}
+
 /* Site header and hero wrapper qr code */
 .site-header-hero-wrapper--qr::after {
   position: absolute;
@@ -141,23 +143,44 @@ img {
   background-size: cover;
 }
 
+/* Site header decoration */
+.site-header-hero-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/ellipse-white.svg),
+    url(../images/star-orange.svg), url(../images/star-white.svg),
+    url(../images/ellipse-purple.svg), url(../images/star-green.svg),
+    url(../images/ellipse-white.svg);
+  background-repeat: no-repeat;
+  background-position: top 65px left calc(50% + 393px),
+    top 75px left calc(50% + 450px), top 169px left calc(50% + 480px),
+    top 369px left calc(50% + 72px), top 430px left calc(50% + 121px),
+    top 441px left calc((50% + 181px));
+  content: "";
+}
+
+/* Site header logo */
 .site-header {
   text-align: right;
   margin-bottom: 60px;
 }
+
 .site-header__logo {
   position: relative;
-  right: 120px;
-  z-index: 1;
+  right: 207px;
+  z-index: 2;
 }
 
 .logo__image1 {
-  display: inline-block;
   width: 135px;
   height: 164px;
 }
+
 .logo__image2 {
-  display: inline-block;
   position: absolute;
   right: -120px;
   width: 130px;
@@ -181,29 +204,29 @@ img {
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
+  color: white;
   font-size: 147.23px;
   font-weight: 800;
   line-height: 172.7px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: white;
 }
 
 .hero__subtitle {
   margin-top: 0;
   margin-bottom: 24px;
+  color: white;
   font-size: 56px;
   font-weight: 700;
   line-height: 65.69px;
-  color: white;
 }
 
 .hero__description {
   max-width: 793px;
+  color: var(--dark-grey);
   font-size: 26px;
   font-weight: 500;
   line-height: 42px;
-  color: var(--dark-grey);
 }
 .hero__text {
   color: white;
@@ -222,7 +245,7 @@ img {
   justify-content: space-between;
 }
 
-.certication__sign-wrapper {
+.certification__sign {
   display: flex;
   flex-direction: column;
 }
@@ -241,7 +264,7 @@ img {
   margin-bottom: 0;
 }
 
-.certification__sign {
+.certification__sign-img {
   order: -1;
   padding-bottom: 14px;
   margin-bottom: 25px;
@@ -267,9 +290,9 @@ img {
 }
 
 .certification__date {
+  color: var(--darker-grey);
   font-size: 24px;
   font-weight: 500;
   line-height: 35px;
-  color: var(--darker-grey);
   text-align: right;
 }
