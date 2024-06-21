@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate form</title>
+
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/general.css" />
+  </head>
+  <body>
+    <!-- Main content -->
+    <main
+      class="certificate__main-content main-content"
+      id="certificate__main-content"
+    >
+      <div class="certificate-fillup">
+        <div class="certificate-fillup__container container">
+          <div class="certificate-fillup__inner">
+            <h1 class="certificate-fillup__heading">Sertifikat yaratish</h1>
+            <form class="certificate-form form" method="post">
+              <!-- Course input -->
+              <div class="form__group">
+                <label for="course-input" class="form__label visually-hidden">
+                  Kurs nomi
+                </label>
+                <input
+                  type="text"
+                  name="course"
+                  id="course-input"
+                  class="form__field"
+                  placeholder="Kurs nomi"
+                  required
+                />
+                <div class="form__error visually-hidden">Wrong format</div>
+              </div>
+              <!-- Student name input -->
+              <div class="form__group">
+                <label
+                  for="student-name-input"
+                  class="form__label visually-hidden"
+                >
+                  O'quvchi ismi
+                </label>
+                <input
+                  type="text"
+                  name="student-name"
+                  id="student-name-input"
+                  class="form__field"
+                  placeholder="O'quvchi ismi"
+                  required
+                />
+                <div class="form__error visually-hidden">Wrong format</div>
+              </div>
+
+              <!-- Date input -->
+              <div class="form__group">
+                <label for="date-input" class="form__label visually-hidden">
+                  Bitirilgan sana
+                </label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date-input"
+                  class="form__field"
+                  placeholder="Bitirilgan sana"
+                  required
+                />
+                <div class="form__error visually-hidden">Wrong format</div>
+              </div>
+              <!-- Course organizer -->
+              <div class="form__group">
+                <label
+                  for="course-organizer-input"
+                  class="form__label visually-hidden"
+                >
+                  Kurs egasi
+                </label>
+                <input
+                  type="text"
+                  name="course-organizer"
+                  id="course-organizer-input"
+                  class="form__field"
+                  placeholder="Kurs egasi"
+                  required
+                />
+                <div class="form__error visually-hidden">Wrong format</div>
+              </div>
+
+              <!-- Course organized position -->
+              <div class="form__group">
+                <label
+                  for="organizer-position-input"
+                  class="form__label visually-hidden"
+                >
+                  Kurs egasi positioni
+                </label>
+                <input
+                  type="text"
+                  name="organized-position"
+                  id="organizer-position-input"
+                  class="form__field"
+                  placeholder="Kurs egasi roli"
+                  required
+                />
+                <div class="form__error visually-hidden">Wrong format</div>
+              </div>
+              <a
+                href="http://127.0.0.1:5500/certificate.html"
+                type="submit"
+                class="form__btn"
+                id="form__btn"
+              >
+                Jo'natish
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/form.js"></script>
+  </body>
+</html>
