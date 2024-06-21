@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>42 certificate</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/certificate.css" />
+    <link rel="stylesheet" href="css/general.css" />
   </head>
   <body>
     <!-- Header and Hero -->
@@ -38,16 +39,22 @@
       <div class="hero">
         <div class="hero__container container">
           <h6 class="hero__about">
-            <span class="colored-text">"Algoritmlar"</span> kursini tamomlagani
-            haqida
+            <span class="colored-text">"</span
+            ><span class="colored-text" id="course">Algoritmlar</span
+            ><span class="colored-text">"</span> kursini tamomlagani haqida
           </h6>
           <h1 class="hero__title">Sertifikat</h1>
-          <h4 class="hero__subtitle">Jasur Hakimov</h4>
+          <h4 class="hero__subtitle" id="student-name">Jasur Hakimov</h4>
           <p class="hero__description">
             Ushbu sertifikat Jasur Hakimovga
-            <span class="hero__text">2024-yil, 25-iyun</span> kuni 42.uz
-            platformasida <span class="hero__text">“Algoritmlar”</span> kursini
-            muvaffaqiyatli tamomlagani uchun berildi.
+            <span class="hero__text" id="completed-date"
+              >2024-yil, 25-iyun</span
+            >
+            kuni 42.uz platformasida
+            <span class="hero__text">"</span
+            ><span class="hero__text" id="course">Algoritmlar</span
+            ><span class="hero__text">"</span> kursini muvaffaqiyatli
+            tamomlagani uchun berildi.
           </p>
         </div>
       </div>
@@ -61,8 +68,12 @@
         <div class="certification__info">
           <div class="certification__sign">
             <div class="certification__person">
-              <p class="certification__name">Yusuf Abdullaev,</p>
-              <p class="certification__position">Co-founder, CEO</p>
+              <p class="certification__name" id="organizer-name">
+                Yusuf Abdullaev,
+              </p>
+              <p class="certification__position" id="organizer-position">
+                Co-founder, CEO
+              </p>
             </div>
             <img
               class="certification__sign-img sign"
@@ -80,13 +91,15 @@
               width="323"
               height="159"
             />
-            <span class="certification__date">2024-yil, 25-iyun</span>
+            <span class="certification__date" id="completed-date"
+              >2024-yil, 25-iyun</span
+            >
           </div>
         </div>
       </div>
     </section>
     <!-- /Certification section -->
 
-    <script src="js/main.js"></script>
+    <script src="js/certificate.js"></script>
   </body>
 </html>
