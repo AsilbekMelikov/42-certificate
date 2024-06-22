@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (
       courseInput.value &&
       nameInput.value &&
-      date &&
+      dateInput.value &&
       organizerInput.value &&
       positionInput.value
     ) {
-      document.location.href = "http://127.0.0.1:5500/certificate.html";
+      document.location.href = "certificate.html";
     }
   });
 });

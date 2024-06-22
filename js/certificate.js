@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const course = document.querySelectorAll("#course");
-  const studentName = document.querySelector("#student-name");
+  const studentName = document.querySelectorAll("#student-name");
   const completedDate = document.querySelectorAll("#completed-date");
   const organizerName = document.querySelector("#organizer-name");
   const organizerPosition = document.querySelector("#organizer-position");
@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   course.forEach((course) => {
     course.textContent = localStorage.getItem("course");
   });
-  studentName.textContent = localStorage.getItem("studentName");
+  studentName.forEach((name) => {
+    name.textContent = localStorage.getItem("studentName");
+  });
   completedDate.forEach((date) => {
     date.textContent = localStorage.getItem("completedDate");
   });

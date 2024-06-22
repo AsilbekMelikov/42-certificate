@@ -126,6 +126,10 @@
   text-transform: capitalize;
 }
 
+.hero__text:nth-last-of-type(4) {
+  text-transform: none;
+}
+
 .certification {
   padding-top: 250px;
   padding-bottom: 85px;
