@@ -8,7 +8,7 @@
 .certificate-fillup {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .certificate-fillup__inner {
@@ -18,7 +18,7 @@
   padding: 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 815px;
+  max-width: 815px;
   border: var(--thin-border) solid black;
   border-radius: var(--bold-border);
   background-color: var(--dark-slate-blue);
@@ -31,6 +31,7 @@
   font-size: 40px;
   font-weight: 800;
   line-height: 50.2px;
+  text-align: center;
 }
 
 .certificate-form {
@@ -93,4 +94,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]::-moz-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(100%);
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 768px) {
+  .certificate-fillup__inner {
+    padding: 20px;
+  }
+
+  .certificate-form {
+    width: 80%;
+  }
 }
